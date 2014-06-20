@@ -1,0 +1,82 @@
+body
+	background-color #ededed
+
+// from http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix
+	zoom 1
+	&:after
+	&:before
+		content ""
+		display table
+	&:after
+		clear both
+
+.side-left
+	float left 
+
+.side-right
+	float right 
+
+
+header
+	width 98%
+	padding 1%
+	background-color #000000
+footer
+	margin-top 1%
+	width 100%
+	background-color #232323
+
+.container
+	margin 0 auto
+	width 90%
+	height 100%
+	background-color #0000ff
+
+	// BLOQUE ARRIB
+	#bloque-up
+		background-color white
+		margin-bottom 20px
+
+		section#main-title
+			width 40%
+			background-color orange
+			// float left
+
+		section#main-img
+			width 40%
+			background-color olive
+			// float right
+			img
+				width 100%
+				height auto
+
+	// BLOQUE DEBAJO
+
+	#bloque-down
+		height auto
+		background-color red
+		img
+			float left
+			margin 1%
+			width 25%
+			height auto
+		p
+			float right
+			width 70%
+
+	#enlaces
+		nav
+			background-color black
+			ul
+				width 100%
+				text-align right
+				margin 0
+				padding 0
+				li
+					display inline-block
+					a
+						display inline-block
+						color red;
+						&:hover
+							color gray
