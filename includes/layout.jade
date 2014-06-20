@@ -5,7 +5,13 @@ html
 		meta(charset='UTF-8')
 		link(rel='stylesheet', href='css/normalize.css')
 		link(rel='stylesheet', href='css/estilos.css')
-		script(src='../js/script.js')
+
+		script(src="js/html5shiv.js")
+
+		//if lt IE 8
+			script(src="js/html5shiv.js")
+		
+		//- script(src='js/script.js')
 	body
 		include header.jade
 		block content
