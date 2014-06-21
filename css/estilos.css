@@ -64,6 +64,8 @@ footer {
 .container #bloque-down p {
   float: right;
   width: 70%;
+  color: #fff;
+  font-size: 12px;
 }
 .container #enlaces nav {
   background-color: #808080;
