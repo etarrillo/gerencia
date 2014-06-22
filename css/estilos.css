@@ -1,5 +1,35 @@
+@font-face {
+  font-family: 'ap-regular';
+  src: url("../font/antipasto_regular-webfont.eot");
+  src: url("../font/antipasto_regular-webfont.eot?#iefix") format('embedded-opentype'), url("../font/antipasto_regular-webfont.woff") format('woff'), url("../font/antipasto_regular-webfont.ttf") format('truetype'), url("../font/antipasto_regular-webfont.svg#antipastoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ap-light';
+  src: url("../font/antipasto_extralight-webfont.eot");
+  src: url("../font/antipasto_extralight-webfont.eot?#iefix") format('embedded-opentype'), url("../font/antipasto_extralight-webfont.woff") format('woff'), url("../font/antipasto_extralight-webfont.ttf") format('truetype'), url("../font/antipasto_extralight-webfont.svg#antipastoextralight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ap-bold';
+  src: url("../font/antipasto_extrabold-webfont.eot");
+  src: url("../font/antipasto_extrabold-webfont.eot?#iefix") format('embedded-opentype'), url("../font/antipasto_extrabold-webfont.woff") format('woff'), url("../font/antipasto_extrabold-webfont.ttf") format('truetype'), url("../font/antipasto_extrabold-webfont.svg#antipastoextrabold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bebas';
+  src: url("../font/bebasneue-webfont.eot");
+  src: url("../font/bebasneue-webfont.eot?#iefix") format('embedded-opentype'), url("../font/bebasneue-webfont.woff") format('woff'), url("../font/bebasneue-webfont.ttf") format('truetype'), url("../font/bebasneue-webfont.svg#bebas_neueregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  background-color: #ededed;
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat;
+  font-family: 'ap-light';
 }
 .clearfix {
   zoom: 1;
@@ -18,79 +48,181 @@ body {
 .side-right {
   float: right;
 }
+.font-title {
+  color: #af343b;
+  font-family: bebas;
+}
+.font-title.font1 {
+  font-size: 46px;
+}
+.font-title.font2 {
+  font-size: 30px;
+}
+.font-title.font3 {
+  font-size: 52px;
+}
+header-css.syl,
 header {
   width: 98%;
   padding: 1%;
-  height: 150px;
+  height: 60px;
   background-color: #000;
+}
+header-css.syl #logo1,
+header #logo1,
+header-css.syl #logo2,
+header #logo2,
+header-css.syl #logo3,
+header #logo3 {
+  display: inline-block;
+  vertical-align: top;
+}
+header-css.syl #logo1 a,
+header #logo1 a,
+header-css.syl #logo2 a,
+header #logo2 a,
+header-css.syl #logo3 a,
+header #logo3 a {
+  background-image: url("../img/sprite-logos.png");
+  background-repeat: no-repeat;
+  width: 185px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: top;
+  color: #000;
+}
+header-css.syl #logo1 a,
+header #logo1 a {
+  background-position: -10px 4px;
+}
+header-css.syl #logo2 a,
+header #logo2 a {
+  background-position: -10px -50px;
+}
+header-css.syl #logo3 a,
+header #logo3 a {
+  background-position: -11px -114px;
 }
 footer {
   margin-top: 1%;
   width: 100%;
-  background-color: #232323;
+  background-color: #292929;
+}
+footer #side-one,
+footer #side-two {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer #side-one {
+  width: 35%;
+}
+footer #side-one p {
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 13px;
+  width: 100%;
+}
+footer #side-one p a {
+  text-align: right;
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 13px;
+  padding: 3% 7%;
+  display: inline-block;
+  text-decoration: none;
+}
+footer #side-one p a:hover {
+  text-decoration: underline;
+}
+footer #side-two {
+  width: 65%;
+}
+footer #side-two p {
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 13px;
+  width: 100%;
+}
+footer #side-two p span {
+  float: right;
 }
 .container {
   margin: 0 auto;
   width: 90%;
   height: 100%;
-  background-color: #00f;
 }
 .container #bloque-up {
-  background-color: #fff;
-  margin-bottom: 20px;
+  max-height: 330px;
+  height: 100%;
+  min-height: 200px;
+  padding: 3% 0;
 }
 .container #bloque-up section#main-title {
   width: 40%;
-  background-color: #ffa500;
+}
+.container #bloque-up section#main-title h1 {
+  border-top: 1px solid #af343b;
+  width: 100%;
+  padding-top: 5%;
+}
+.container #bloque-up section#main-title h2 {
+  width: 80%;
+  font-size: 20px;
+  color: #6c6a6a;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #af343b;
 }
 .container #bloque-up section#main-img {
-  width: 40%;
-  background-color: #808000;
+  width: 55%;
+  max-height: 330px;
 }
 .container #bloque-up section#main-img img {
-  width: 100%;
+  width: 90%;
   height: auto;
-}
-.container #bloque-down {
-  height: auto;
-  background-color: #f00;
-}
-.container #bloque-down img {
-  float: left;
-  margin: 1%;
-  width: 25%;
-  height: auto;
-}
-.container #bloque-down p {
-  float: right;
-  width: 70%;
-  color: #fff;
-  font-size: 20px;
 }
 .container #enlaces nav {
-  background-color: #808080;
   width: 100%;
 }
 .container #enlaces nav ul {
   width: 50%;
-  float: right;
+  float: left;
   background-color: #000;
-  text-align: right;
+  text-align: left;
   margin: 0;
   padding: 0;
   font-size: 0;
+  padding: 1.5% 0 1.5% 5%;
 }
 .container #enlaces nav ul li {
   display: inline-block;
+  vertical-align: middle;
+  width: 40%;
 }
 .container #enlaces nav ul li a {
+  font-family: 'bebas';
   display: inline-block;
-  font-size: 15px;
-  padding: 15px 25px;
-  border: 1px solid #fff;
-  color: #f00;
+  vertical-align: middle;
+  font-size: 20px;
+  padding: 5% 10%;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
 }
 .container #enlaces nav ul li a:hover {
   background-color: #fff;
-  color: #f00;
+  color: #000;
+}
+.container #bloque-down {
+  height: auto;
+  background-color: #af343b;
+  border-top: 3px solid #cd4a51;
+  box-shadow: 0 -2px 3px #808080;
+}
+.container #bloque-down p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 7% 5% 3% 5%;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Arial';
 }

@@ -1,0 +1,43 @@
+footer {
+  margin-top: 1%;
+  width: 100%;
+  background-color: $plomo;
+}
+footer #side-one,
+footer #side-two {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer #side-one {
+  width: 35%;
+}
+footer #side-one p {
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 13px;
+  width: 100%;
+}
+footer #side-one p a {
+  text-align: right;
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 13px;
+  padding: 3% 7%;
+  display: inline-block;
+  text-decoration: none;
+}
+footer #side-one p a:hover {
+  text-decoration: underline;
+}
+footer #side-two {
+  width: 65%;
+}
+footer #side-two p {
+  color: #fff;
+  font-family: 'Arial';
+  font-size: 13px;
+  width: 100%;
+}
+footer #side-two p span {
+  float: right;
+}

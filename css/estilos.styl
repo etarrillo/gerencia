@@ -1,5 +1,11 @@
+$rojo-gerencia = #af343b
+$plomo = #292929
+
+@import 'font.styl'
 body
-	background-color #ededed
+	background-image url('../img/bg.jpg')
+	background-repeat repeat
+	font-family 'ap-light'
 
 // from http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix
@@ -17,77 +23,104 @@ body
 .side-right
 	float right 
 
+.font-title
+	color $rojo-gerencia
+	font-family bebas
+	&.font1
+		font-size 46px
+	&.font2
+		font-size 30px
+	&.font3
+		font-size 52px
 
-header
-	width 98%
-	padding 1%
-	height 150px
-	background-color #000000
-footer
-	margin-top 1%
-	width 100%
-	background-color #232323
+
+@import 'header-css.styl'
+@import 'footer-css.styl'
 
 .container
 	margin 0 auto
 	width 90%
 	height 100%
-	background-color #0000ff
+	// background-color rgba(255, 255, 255, .3)
 
 	// BLOQUE ARRIB
 	#bloque-up
-		background-color white
-		margin-bottom 20px
+		max-height 330px
+		height 100%
+		min-height 200px
+		padding 3% 0
 
 		section#main-title
 			width 40%
-			background-color orange
-			// float left
+			h1
+				border-top 1px solid $rojo-gerencia
+				width 100%
+				padding-top 5%
+			h2
+				width 80%
+				font-size 20px
+				color: #6c6a6a
+				padding-bottom 5%
+				border-bottom 1px solid $rojo-gerencia
 
 		section#main-img
-			width 40%
-			background-color olive
-			// float right
+			width 55%
+			max-height 330px
 			img
-				width 100%
+				width 90%
 				height auto
 
+	// ENLACES
+	#enlaces
+		nav
+			width 100%
+			ul
+				width 50%
+				float left
+				background-color black
+				text-align left
+				margin 0
+				padding 0
+				font-size 0
+				padding 1.5% 0 1.5% 5%
+				li
+					display inline-block
+					vertical-align middle
+					width 40%
+					a
+						font-family 'bebas'
+						display inline-block
+						vertical-align middle
+						font-size 20px
+						padding 5% 10%
+						text-decoration none
+						color #ffffff
+						text-align center
+						&:hover
+							background-color white
+							color black
 	// BLOQUE DEBAJO
 
 	#bloque-down
 		height auto
-		background-color red
-		img
-			float left
-			margin 1%
-			width 25%
-			height auto
+		background-color $rojo-gerencia
+		border-top 3px solid #cd4a51
+		box-shadow 0 -2px 3px gray
 		p
-			float right
-			width 70%
+			width 80%
+			margin 0 auto
+			padding 7% 5% 3% 5%
 			color #ffffff
-			font-size 20px
+			font-size 15px
+			font-family 'Arial'
 
-	#enlaces
-		nav
-			background-color gray
-			width 100%
-			ul
-				width 50%
-				float right
-				background-color black
-				text-align right
-				margin 0
-				padding 0
-				font-size 0
-				li
-					display inline-block
-					a
-						display inline-block
-						font-size 15px
-						padding 15px 25px
-						border 1px solid white
-						color red;
-						&:hover
-							background-color white
-							color red
+
+
+
+
+
+
+
+
+
+
