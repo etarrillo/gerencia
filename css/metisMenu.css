@@ -1,0 +1,37 @@
+.arrow {
+  float: right;
+}
+.glyphicon.arrowbefore {
+  content: "\e079";
+}
+.active > a > .glyphicon.arrowbefore {
+  content: "\e114";
+}
+.fa.arrowbefore {
+  content: "\f104";
+}
+.active > a > .fa.arrowbefore {
+  content: "\f107";
+}
+.plus-times {
+  float: right;
+}
+.fa.plus-timesbefore {
+  content: "\f067";
+}
+.active > a > .fa.plus-times {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.plus-minus {
+  float: right;
+}
+.fa.plus-minusbefore {
+  content: "\f067";
+}
+.active > a > .fa.plus-minusbefore {
+  content: "\f068";
+}

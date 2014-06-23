@@ -1,1 +1,4 @@
-alert('hola');
+// alert('hola');
+$(function () {
+    $('#menu').metisMenu();
+});

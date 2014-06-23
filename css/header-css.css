@@ -1,24 +1,17 @@
-header-css.syl,
 header {
-  width: 98%;
+  width: 100%;
   padding: 1%;
-  height: 60px;
+  height: 100%;
   background-color: #000;
 }
-header-css.syl #logo1,
 header #logo1,
-header-css.syl #logo2,
 header #logo2,
-header-css.syl #logo3,
 header #logo3 {
   display: inline-block;
   vertical-align: top;
 }
-header-css.syl #logo1 a,
 header #logo1 a,
-header-css.syl #logo2 a,
 header #logo2 a,
-header-css.syl #logo3 a,
 header #logo3 a {
   background-image: url("../img/sprite-logos.png");
   background-repeat: no-repeat;
@@ -28,15 +21,12 @@ header #logo3 a {
   vertical-align: top;
   color: #000;
 }
-header-css.syl #logo1 a,
 header #logo1 a {
   background-position: -10px 4px;
 }
-header-css.syl #logo2 a,
 header #logo2 a {
   background-position: -10px -50px;
 }
-header-css.syl #logo3 a,
 header #logo3 a {
   background-position: -11px -114px;
 }

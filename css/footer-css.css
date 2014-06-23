@@ -1,6 +1,7 @@
 footer {
   margin-top: 1%;
   width: 100%;
+  padding: 1%;
   background-color: $plomo;
 }
 footer #side-one,
@@ -16,6 +17,7 @@ footer #side-one p {
   font-family: 'Arial';
   font-size: 13px;
   width: 100%;
+  margin: 0;
 }
 footer #side-one p a {
   text-align: right;
