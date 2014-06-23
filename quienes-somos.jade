@@ -3,5 +3,11 @@ extend includes/layout.jade
 block content
 	.contenedor
 		h1 ¿Quiénes Somos?
+		#main-content.clearfix
+			#main-menu.side-left
+				include includes/menu-quienes-somos.html
+			#contenido.side-right
+				include includes/contenido-quienes-somos.html
 
-
+			a(href="#")#toTop
+				span#toTopHover

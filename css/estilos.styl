@@ -2,7 +2,6 @@ $rojo-gerencia = #af343b
 $plomo = #292929
 
 @import 'normalize.styl'
-@import 'font.styl'
 @import 'header-css.styl'
 @import 'footer-css.styl'
 
@@ -102,6 +101,7 @@ body
 						text-decoration none
 						color #ffffff
 						text-align center
+						transition all 0.3s ease
 						&:hover
 							background-color white
 							color black
@@ -120,13 +120,39 @@ body
 			font-size 15px
 			font-family 'Arial'
 
-
-
-
-
-
-
-
-
-
+//QUIENES SOMOS
+#main-menu
+	width 30%
+#contenido
+	width 65%
+//TO TOP 
+#toTop
+	display none
+	text-decoration none
+	position fixed
+	bottom 10px
+	right 10px
+	overflow hidden
+	width 51px
+	height 51px
+	border 0
+	text-indent 100%
+	background-image url('../img/totop.png')
+	background-repeat no-repeat
+	background-position left top
+	&:active,
+	&:focus
+		outline 0
+	#toTopHover
+		background-image url('../img/totop.png')
+		background-repeat no-repeat
+		background-position left -51px
+		width 51px
+		height 51px
+		display block
+		overflow hidden
+		float left
+		opacity:0
+		-moz-opacity 0
+		
 

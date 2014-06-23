@@ -3,8 +3,15 @@ extend includes/layout.jade
 block content
 	.contenedor
 		h1 Introducción
+		#main-content.clearfix
+			#main-menu.side-left
+				include includes/menu-introduccion.html
+			#contenido.side-right
+				include includes/contenido-introduccion.html
 
-		include includes/menu.jade
+			a(href="#")#toTop
+				span#toTopHover
+
 
 
 

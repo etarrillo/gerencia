@@ -1,5 +1,8 @@
 .sidebar {
   display: block;
+  position: fixed;
+  left: 0;
+  top: 150px;
   width: 250px;
   background: #333;
 }

@@ -178,34 +178,6 @@ td,
 th {
   padding: 0;
 }
-@font-face {
-  font-family: 'ap-regular';
-  src: url("../font/antipasto_regular-webfont.eot");
-  src: url("../font/antipasto_regular-webfont.eot?#iefix") format('embedded-opentype'), url("../font/antipasto_regular-webfont.woff") format('woff'), url("../font/antipasto_regular-webfont.ttf") format('truetype'), url("../font/antipasto_regular-webfont.svg#antipastoregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ap-light';
-  src: url("../font/antipasto_extralight-webfont.eot");
-  src: url("../font/antipasto_extralight-webfont.eot?#iefix") format('embedded-opentype'), url("../font/antipasto_extralight-webfont.woff") format('woff'), url("../font/antipasto_extralight-webfont.ttf") format('truetype'), url("../font/antipasto_extralight-webfont.svg#antipastoextralight") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ap-bold';
-  src: url("../font/antipasto_extrabold-webfont.eot");
-  src: url("../font/antipasto_extrabold-webfont.eot?#iefix") format('embedded-opentype'), url("../font/antipasto_extrabold-webfont.woff") format('woff'), url("../font/antipasto_extrabold-webfont.ttf") format('truetype'), url("../font/antipasto_extrabold-webfont.svg#antipastoextrabold") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'bebas';
-  src: url("../font/bebasneue-webfont.eot");
-  src: url("../font/bebasneue-webfont.eot?#iefix") format('embedded-opentype'), url("../font/bebasneue-webfont.woff") format('woff'), url("../font/bebasneue-webfont.ttf") format('truetype'), url("../font/bebasneue-webfont.svg#bebas_neueregular") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 header {
   width: 100%;
   padding: 1%;
@@ -239,7 +211,6 @@ header #logo3 a {
   background-position: -11px -114px;
 }
 footer {
-  margin-top: 1%;
   width: 100%;
   padding: 1%;
   background-color: #292929;
@@ -322,6 +293,9 @@ footer #side-two p span {
 }
 .sidebar {
   display: block;
+  position: fixed;
+  left: 0;
+  top: 150px;
   width: 250px;
   background: #333;
 }
@@ -469,6 +443,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-align: center;
+  transition: all 0.3s ease;
 }
 .contenedor #enlaces nav ul li a:hover {
   background-color: #fff;
@@ -487,4 +462,41 @@ body {
   color: #fff;
   font-size: 15px;
   font-family: 'Arial';
+}
+#main-menu {
+  width: 30%;
+}
+#contenido {
+  width: 65%;
+}
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+  width: 51px;
+  height: 51px;
+  border: 0;
+  text-indent: 100%;
+  background-image: url("../img/totop.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+#toTop:active,
+#toTop:focus {
+  outline: 0;
+}
+#toTop #toTopHover {
+  background-image: url("../img/totop.png");
+  background-repeat: no-repeat;
+  background-position: left -51px;
+  width: 51px;
+  height: 51px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  opacity: 0;
+  -moz-opacity: 0;
 }
