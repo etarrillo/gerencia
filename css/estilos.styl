@@ -1,4 +1,6 @@
-$rojo-gerencia = #af343b
+$rojo-bajo = #af343b
+$rojo-gerencia = #8a0d16
+$amarillo-gerencia = #f7edce
 $plomo = #292929
 
 @import 'normalize.styl'
@@ -44,7 +46,7 @@ body
 
 .contenedor
 	margin 0 auto
-	width 90%
+	width 1090px
 	height 100%
 	// background-color rgba(255, 255, 255, .3)
 
@@ -68,57 +70,72 @@ body
 				padding-bottom 5%
 				border-bottom 1px solid $rojo-gerencia
 
-		section#main-img
-			width 55%
-			max-width 550px
-			max-height 270px
+		section#main-slide
+			width 630px
+			height 400px
 			img
-				width 90%
+				width 100%
 				height auto
+			#contenedor-slider
+				width 670px
+				height 402px
+				background-image url('../img/bg-slider.png')
+				background-repeat: no-repeat
+				background-position: bottom center
 
-	// ENLACES
-	#enlaces
-		nav
-			width 100%
-			ul
-				width 50%
-				float left
-				background-color black
-				text-align left
-				margin 0
-				font-size 0
-				padding 1% 0 1% 5%
-				li
+// ENLACES
+.sprite-menu
+	background-image url('../img/sprite-menu.png')
+	background-repeat no-repeat	
+.sprite-menu-quienes
+	background-position 0px -100px
+.sprite-menu-intro
+	background-position 0px 0px
+#enlaces
+	margin-bottom 40px
+	margin-top -60px
+	nav
+		width 100%
+		ul
+			width 500px
+			float left
+			text-align left
+			margin 0
+			font-size 0
+			padding 2% 2% 2% 0px;
+			li
+				display block
+				margin-bottom 5px
+				padding 15px 0px 0px 110px
+				
+				a
+					font-family 'bebas'
+					color $rojo-gerencia
 					display inline-block
-					vertical-align middle
-					width 40%
-					a
-						font-family 'bebas'
-						display inline-block
-						vertical-align middle
-						font-size 20px
-						padding 5% 10%
-						text-decoration none
-						color #ffffff
-						text-align center
-						transition all 0.3s ease
-						&:hover
-							background-color white
-							color black
-	// BLOQUE DEBAJO
+					vertical-align middle					
+					border-top none
+					border-right none
+					border-bottom none
+					font-size 20px
+					text-decoration none
+					text-align center
+					transition all 0.3s ease
+					&:hover
+						color $rojo-gerencia
+// BLOQUE DEBAJO
 
-	#bloque-down
-		height auto
-		background-color $rojo-gerencia
-		border-top 3px solid #cd4a51
-		box-shadow 0 -2px 3px gray
-		p
-			width 80%
-			margin 0 auto
-			padding 7% 5% 3% 5%
-			color #ffffff
-			font-size 15px
-			font-family 'Arial'
+#bloque-down
+	height auto
+	background-color $rojo-bajo
+	border-top 5px solid $rojo-gerencia
+	box-shadow 0 -2px 3px gray
+	p
+		width 80%
+		margin 0 auto
+		padding 7% 5% 3% 5%
+		color $amarillo-gerencia
+		font-size 15px
+		font-family 'Arial'
 
 //QUIENES SOMOS
 #main-menu

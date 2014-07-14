@@ -1,7 +1,8 @@
 footer {
   width: 100%;
   padding: 1%;
-  background-color: $plomo;
+  border-top: 5px solid #fff;
+  background-color: $rojo-gerencia;
 }
 footer #side-one,
 footer #side-two {
