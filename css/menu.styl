@@ -1,11 +1,11 @@
-.sidebar
+// .sidebar
+#menu
 	display block
 	// float left
-	position fixed
-	left 0
-	top 150px
+	// position fixed
+	// left 0
 	width 250px
-	background #333
+	background $rojo-gerencia
 
 .content
 	display block
@@ -15,17 +15,22 @@
 
 .sidebar-nav
 	border-bottom 1px solid rgba(0, 0, 0, 0.3)
-	background-image -webkit-linear-gradient(left, color-stop(#333333 10px), color-stop(#222222 10px))
-	background-image linear-gradient(to right, #333333 10px, #222222 10px)
-	background-repeat repeat-x
+	// background-image -webkit-linear-gradient(left, color-stop(#333333 10px), color-stop(#222222 10px))
+	// background-image linear-gradient(to right, #333333 10px, #222222 10px)
+	// background-repeat repeat-x
 
 .sidebar-nav ul
 	padding 0
 	margin 0
 	list-style none
+.sidebar-nav ul li
+	border-left 10px solid #660e15
 
 .sidebar-nav ul li,
 .sidebar-nav ul a
+	font-family 'antipasto'
+	font-size 18px
+	color #ffffff
 	display block
 
 .sidebar-nav ul a

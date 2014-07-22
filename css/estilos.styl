@@ -43,6 +43,55 @@ body
 		font-size 52px
 	
 
+.titulo,
+.subtitulo
+	color $rojo-gerencia
+	font-family 'bebas'
+	text-align right
+.titulo
+	font-size 35px
+.subtitulo
+	font-size 25px
+.titulo-article
+	font-size 15px
+	color $rojo-gerencia
+	font-family 'robotoRegular'
+	text-transform uppercase
+	text-align right
+section
+	p
+		font-size 13px
+		color $plomo
+		font-family 'robotoRegular'
+
+	span.litle-title
+		font-weight bold
+	.stripe
+		display block
+		margin-bottom 15px
+		border-bottom 1px solid black
+	.list-contenido
+		ul
+			li
+				font-family 'robotoRegular'
+
+
+.btn-contenidos
+	background-color $rojo-gerencia
+	padding 10px 30px
+	color #ffffff
+	font-size 12px
+	text-transform uppercase
+	text-decoration none
+	display inline-block
+	font-family 'robotoRegular'
+	margin 20px
+	text-align right
+	&:hover
+		color $amarillo-gerencia
+		font-size 12px
+		text-decoration none
+		background-color $rojo-gerencia
 
 .contenedor
 	margin 0 auto
@@ -53,7 +102,7 @@ body
 	// BLOQUE ARRIB
 	#bloque-up
 		max-height 330px
-		height 100%
+		height 280px
 		min-height 200px
 		padding 3% 0
 
@@ -136,6 +185,29 @@ body
 		color $amarillo-gerencia
 		font-size 15px
 		font-family 'Arial'
+//MENU SECUNDARIO
+#menu_secundario
+	width 665px
+	background-color $rojo-gerencia
+	height 70px
+	ul
+		padding 15px 0 15px 50px
+		li
+			display inline-block
+			padding 5px 10px
+			a
+				color #ffffff
+				font-size 18px
+				font-family 'bebas'
+				text-transform uppercase
+				margin-top 15px
+				padding 10px
+				text-decoration none
+				border-bottom 3px solid $rojo-gerencia
+				&:hover
+					color #000000
+					text-decoration none
+					border-bottom 3px solid #ffffff
 
 //QUIENES SOMOS
 #main-menu
@@ -172,4 +244,8 @@ body
 		opacity:0
 		-moz-opacity 0
 		
+.menu-fijo
+	position fixed
+	top 0
+	width 250px
 
